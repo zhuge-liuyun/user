@@ -44,7 +44,7 @@ gulp.task('js', function() {
         .pipe(gulp.dest('style'));
 });
 //操作html文件
-gulp.task('html', function() {
+gulp.task('html', ['srever'], function() {
     gulp.src('src/index.html')
         .pipe(gulp.dest('style'));
 });
